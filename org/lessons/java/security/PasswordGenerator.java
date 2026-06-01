@@ -23,7 +23,8 @@ public class PasswordGenerator {
         }
 
 
-        password = nome + "-" + cognome + "-" + colore_preferito + "-" + data_di_nascita[2];
+        int data_di_nascita_somma = data_di_nascita[0] + data_di_nascita[1] + data_di_nascita[2];
+        password = nome + "-" + cognome + "-" + colore_preferito + "-" + data_di_nascita_somma;
         
         System.out.printf("Password generata: %s%n", password);
     }
